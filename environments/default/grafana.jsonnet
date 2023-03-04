@@ -6,7 +6,7 @@ local _config = import 'config.jsonnet';
       apiVersion: 'apps/v1',
       kind: _config.grafana['port'],
       metadata: {
-        name: _config.grafana.name, # intellisense doesn't autocomplete this for some reason
+        name: _config.grafana.name,
       },
       spec: {
         selector: {
